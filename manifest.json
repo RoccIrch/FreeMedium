@@ -1,0 +1,20 @@
+{
+      "manifest_version": 2,
+      "name": "Free Medium",
+      "version": "1.0",
+      "description": "Open Medium articles on Freedium",
+      "permissions": [
+            "activeTab"
+      ],
+      "content_scripts": [
+            {
+                  "matches": ["*://medium.com/*"],
+                  "js": ["content.js"]
+            }
+      ],
+      "icons": {
+            "16": "icon/icon16.png",
+            "48": "icon/icon48.png",
+            "128": "icon/icon128.png"
+      }
+}
